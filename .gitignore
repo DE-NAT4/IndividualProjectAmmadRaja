@@ -1,0 +1,15 @@
+# Python bytecode cache — auto-generated when Python runs your code
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime data — created by users of the program, not part of the source
+data/*.csv
+
+# Stray CSVs from path bugs during development (defensive)
+src/*.csv
+
+# Virtual environments
+venv/
+.venv/
+env/
