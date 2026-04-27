@@ -94,7 +94,7 @@ def _move_user(from_list, to_list):
     # Append to the destination list. Both .pop and .append mutate
     # in place, so the lists in main() reflect the change immediately.
     to_list.append(user)
-    print(f"User '{user['name']}' disabled.")
+    print(f"User '{user['name']}' moved.")
     
 def toggle_user(active_users, disabled_users):
     """
