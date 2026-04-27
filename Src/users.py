@@ -133,12 +133,9 @@ def test_login(active_users):
     name = input("Username: ").strip()
     password = input("Password: ").strip()
     
-    # Loop through active users looking for a match on BOTH fields.
     for user in active_users:
         if user["name"] == name and user["password"] == password:
             print("ACCESS GRANTED")
-        else:
-            print("ACCESS DENIED: wrong password.")
-        return
-    
-    print("ACCESS DENIED: no such active user")
+            return
+
+    print("ACCESS DENIED: wrong username or password.")
